@@ -28,6 +28,9 @@ gpu_mem=192
 dtparam=i2c_arm=on
 dtparam=spi=on
 
+# Enable the CAN board
+dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
+
 # Enable audio (loads snd_bcm3825)
 dtparam=audio=on
 
